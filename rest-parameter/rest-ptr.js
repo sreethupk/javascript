@@ -1,0 +1,1 @@
+//rest parameters-(...)the rest paramters allows a function to expect infinity number of arguments as array
