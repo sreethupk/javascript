@@ -1,16 +1,6 @@
+const prompt = require('prompt-sync')();
 
-
-//const promise = new promise((resolve, reject)=>{
-    //asynchronous opertaion
-//})
-
-// resolve -code when the opertaion is success
-// reject-code when the operation is failed
-
-//.then = excecute the promise is resolve
-//.catch = excecute the promise is rejected
-//.finally=excute the promise was either resolve or reject
-
+let answer = prompt("enter true or false:");
 
 let myPromise = new Promise((resolve, reject) => { //creating to new promise
     let success = false;
