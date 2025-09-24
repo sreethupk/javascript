@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+            width: 500px;
+            height: 500px;
+            
+        }
+        h2 {
+            text-align: center;
+            font-style: oblique;
+        }
+        .row{
+            display: flex;
+            gap: 120px;
+            
+        
+        }
+        .container{
+            border-radius: 10px;
+            display: flex;
+            gap: 200px;
+        }
+        .col{
+            display: flex;
+            gap: 100px;
+        }
+
+        
+    
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2><i>spa client intale form</i></h2>
+    <form id="myform" onsubmit="">
+        <div class="form-step active">
+        <label>Name: <br></label>
+        <input type="text" id="name" name="name" >
+        <span class="error" id="newerror"></span>
+        <label></label>
+        <input type="text" id="name" name="name" >
+        <span class="error" id="newerror"></span>
+       
+        <div class="row">
+            <label for="">first name</label>
+         <label for="">last name</label>
+        </div>
+        <div class></div>
+
+
+        <br><label>phone Number</label>
+        <input type="Eamil" id="phone" name="phone">
+        <span class="error" id="phoneError"></span>
+
+        <label><br><br>Email</label>
+        <input type="Eamil" id="phone" name="phone">
+        <span class="error" id="emailError"></span>
+
+        <br><label><br>Address <br></label>
+        <input type="Address" id="Address" name="Address">
+        <span class="Error" id="AdressError"></span>
+        <div>
+    
+            <label for="">street Address</label>
+        </div>
+       <br> <div class="row">
+            <input type="Address" id="Address" name="Address">
+        </div>
+        <div class="id">
+            <label for="">addree line 2</label>
+        </div>
+        <div class="cmd">
+            <label></label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="newerror"></span>
+        <input type="text" id="name" name="name">
+        <span class="error" id="newerror"></span>
+        <div class="container">
+            <label for="">city</label>
+             <label for="">state/Region/province</label>
+        </div>
+       
+        </div>
+        <div class="colum">
+             <label></label>
+        <input type="text" id="name" name="name">
+        <span class="error" id="newerror"></span>
+        <input type="text" id="name" name="name">
+        <span class="error" id="newerror"></span>
+        <div class="col">
+            <label for="">postal/zipcode</label>
+            <label for="">country</label>
+        </div>
+        
+        </div>
+
+        </div>
+
+
+    </div>
+  
+        <script>
+            
+            function validateForm() {
+                // Clear previous errors
+                document.getElementById("nameError").innerText = "";
+                document.getElementById("phoneError").innerText = "";
+                document.getElementById("emailError").innerText = "";
+                document.getElementById("addressError").innerText = "";
+
+                let isValid = true;
+
+                // Name validation
+                const name = document.getElementById("name").value.trim();
+                if (name === "") {
+                    document.getElementById("nameError").innerText = "Name is required";
+                    isValid = false;
+                }
+
+                // Phone number validation
+                const phone = document.getElementById("phone").value.trim();
+                const phonePattern = /^\d{10}$/;
+                if (!phonePattern.test(phone)) {
+                    document.getElementById("phoneError").innerText = "Phone number must be 10 digits";
+                    isValid = false;
+                }
+
+                // Email validation
+                const email = document.getElementById("email").value.trim();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    document.getElementById("emailError").innerText = "Invalid email format";
+                    isValid = false;
+                }
+
+
+
+                // address validation
+                const address = document.getElementById("address").value.trim();
+                const addressPattern = /^[a-zA-Z0-9\s,.-]{5,}$/;
+                if (!emailPattern.test(email)) {
+                    document.getElementById("addressError").innerText = "Invalid email format";
+                    isValid = false;
+                }
+
+            }
+           
+        </script>
+       
+
+</body>
+
+</html>

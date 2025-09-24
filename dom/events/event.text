@@ -1,0 +1,14 @@
+what is event= a event is an action or occurance that happans in the browswer
+eg= a user clicking a button
+mouse hover
+input fled type
+form fill
+
+
+even liseners= its a function
+a lisenersis a function in js that wait for a event to occure on html element and then excuted code in response
+ uses=to make the website interactive
+ to seperate html and js
+
+ event handiling=event handing means writing js code that will run when a specific event occure
+ 

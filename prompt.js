@@ -18,3 +18,6 @@ myPromise
     .then(result =>console.log(result)) // then the promise is resolved
     .catch(Error =>console.log(Error))// then the promise is rejected
     .finally(()=>console.log("Promise exicution finished"))// always working
+
+    //browswer method
+    //user input nalkaan input box kodukaan

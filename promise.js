@@ -1,7 +1,7 @@
 
 
 //const promise = new promise((resolve, reject)=>{
-    //asynchronous opertaion
+    //asynchronous opertaion handile
 //})
 
 // resolve -code when the opertaion is success
