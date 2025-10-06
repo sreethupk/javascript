@@ -6,11 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn">Click me</button>
+    <h2>BeforeUnload</h2>
+    <p>try to reload or close the page</p>
 
     <script>
-        document.getElementById("btn").addEventListener("click",function(){
-            alert("Button was clicked")
+        window.addEventListener("beforeunload" , (event)=>{
+            event.preventDefault();
+            event.returnValue ="";
+            
         })
     </script>
 </body>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play pause ended</title>
+  </head>
+  <body>
+    <h2> pause end events</h2>
+    <audio id="audioPlayer" controls>
+      <source src="./insects-69446.mp3" type="audio/mpeg" />
+    </audio>
+    <p id="eventOutput">Event will appear here</p>
+    <script>
+      const audio = document.getElementById("audioPlayer");
+      const output = document.getElementById("eventOutput");
+
+      // play event
+      audio.addEventListener("play", () => {
+        output.textContent = "Play event fired !!";
+        console.log("Play event fired !!");
+      });
+
+      // pause event
+      audio.addEventListener("pause", () => {
+        output.textContent = "Pause event fired !!";
+        console.log("Pause event fired !!");
+      });
+
+      // ended event
+      audio.addEventListener("ended", () => {
+        output.textContent = "ended event fired !!";
+        console.log("ended event fired !!");
+      });
+    </script>
+  </body>
+</html>

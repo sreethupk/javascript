@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key up</title>
+</head>
+<body>
+    <h2>Key up</h2>
+    <p id="output"></p>
+
+    <script>
+        document.addEventListener("keyup",(addEventListener)=>{  // it can be named as event or e. also works without ()
+            document.getElementById("output").innerText = `Key up: ${event.key}`;
+        });
+    </script>
+</body>
+</html>

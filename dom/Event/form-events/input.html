@@ -6,18 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="name" placeholder="click me">
+    <input type="text" name="" id="name" placeholder="Type something">
     <p id="output"></p>
 
     <script>
         const input = document.getElementById("name");
         const output = document.getElementById("output");
 
-        input.addEventListener("focus",()=>{
-            output.innerText = "Input focued";
+        input.addEventListener("input", (e) => {
+            output.innerText = `You typed : ${input.value}`;  // output shows whatever things we give as input.
+            console.log("started typing.....");
         })
-
-        input.addEventListener("blur", () =>output.innerText="Input Lost Focus!")
     </script>
 </body>
 </html>

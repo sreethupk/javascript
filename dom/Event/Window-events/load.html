@@ -6,13 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>LoadEvent</h2>
+    <h2>LoadingEvent</h2>
+
     <p id="msg"></p>
 
     <script>
-        window.addEventListener("load", ()=>{
-            document.getElementById('msg').textContent = "page is fully loaded"
-        })
+        window.addEventListener("load", (e)=>{
+            document.getElementById("msg").textContent= "Page loaded succesfully";
+        });
     </script>
 </body>
 </html>

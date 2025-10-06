@@ -1,0 +1,23 @@
+<!-- fires when a key is pressed down. -->
+<!-- works for all keys. -->
+<!-- fired once but repeats if we hold the key -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key down</title>
+</head>
+<body>
+    <h2>Key down</h2>
+    <p id="output"></p>
+
+    <script>
+        document.addEventListener("keydown",(addEventListener)=>{  // it can be named as event or e. also works without ()
+            document.getElementById("output").innerText = `Key Down: ${event.key}`;
+            console.log(`key downed`);
+        });
+    </script>
+</body>
+</html>

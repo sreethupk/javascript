@@ -1,0 +1,14 @@
+Event :
+        *) An event is an action or occurance that happens in the browser.
+        eg : A user clicking a button, submitting form, hovering mouse...
+
+Event Listners :
+        *) An event listner is a function in js that waits for an event to occur on html element and then executes code in response.
+        
+Why use Event Listners?
+        *) Used to make a website interactive.
+        *) To seperate html and js.
+
+What is Event Handling?
+        *) Event handling means waiting js code that will run when a specific event occurs.
+        
