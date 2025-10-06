@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myform">
+        <input type="text" id="myInput" placeholder="Enter your name">
+        <br><br>
+
+        <select id="mySelect">
+            <option value="">selection a color</option>
+            <option value="red">red</option>
+            <option value="blue">Blue</option>
+            <option value="green">green</option>
+        </select>
+
+        <p id="output"></p>
+    </form>
+
+    <script>
+        const input = document.getElementById("myInput");
+        const select = document.getElementById("mySelect");
+        const output = document.getElementById("output");
+
+        input.addEventListener("change", () => {
+            output.innerText = "Input changed: " + input.value;
+        });
+
+        select.addEventListener("change", () => {
+            output.innerText = "You selected: "+ select.value;
+        });
+    </script>
+</body>
+</html>
