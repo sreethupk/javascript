@@ -17,3 +17,4 @@ function greetUserInput(callback){
 
 //greetUserInput pass greetuser as a callback
 greetUserInput(greetUser);
+//call back hell-In JavaScript, Callback Hell happens when too many nested callback functions are used — one inside another — making the code hard to read, debug, and maintain.

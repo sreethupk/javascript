@@ -27,3 +27,5 @@ class Dog extends Animal{  //extend -keyword in inherit
 
 const dog = new Dog("Rex", "Germen shepherd")
 dog.speak();
+//Inheritance is a feature in JavaScript that allows one class (child) to use properties and methods of another class (parent).
+//It helps in code reusability and organization.
